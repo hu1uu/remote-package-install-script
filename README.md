@@ -13,3 +13,14 @@ az vm extension set \
   --settings '{"fileUris":["<raw github url>"]}' \
   --protected-settings '{"commandToExecute": "./<script-to-run>.sh"}'
 ```
+
+Basic az commands to get your rg and vm
+```bash
+# List all RGs located <region>
+ az group list --query "[?location=='<region>']" -o table
+
+
+# List all VM in RG
+ az vm list --resource-group  <RG> -o table
+ 
+ ```bash
