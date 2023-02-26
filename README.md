@@ -23,4 +23,4 @@ Basic az commands to get your rg and vm
 # List all VM in RG
  az vm list --resource-group  <RG> -o table
  
- ```bash
+ ```
